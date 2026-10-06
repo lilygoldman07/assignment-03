@@ -204,7 +204,7 @@ def parens_match_scan(mylist):
     
     """
     history, last = scan(plus, 0, list(map(paren_map, mylist)))
-    return last == 0 and reduce(min_f, 0, history)
+    return last == 0 and reduce(min_f, 0, history) >= 0
 
 def scan(f, id_, a):
     """
